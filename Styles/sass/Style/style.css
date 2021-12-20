@@ -1,0 +1,114 @@
+/*General*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Body*/
+body {
+  min-width: 350px;
+}
+
+/*Header*/
+.header {
+  -webkit-box-shadow: 0 0 9px #929b9a;
+          box-shadow: 0 0 9px #929b9a;
+  margin-bottom: 3px;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px 0 15px;
+}
+
+.logo img {
+  height: 28px;
+}
+
+/*Location*/
+.location {
+  text-align: center;
+  background-color: #eaeaea;
+  padding: 15px 0 15px 25px;
+}
+
+input {
+  background-color: #eaeaea;
+  border: transparent;
+}
+
+input::-webkit-input-placeholder {
+  font-weight: 500;
+  color: black;
+}
+
+input:-ms-input-placeholder {
+  font-weight: 500;
+  color: black;
+}
+
+input::-ms-input-placeholder {
+  font-weight: 500;
+  color: black;
+}
+
+input::placeholder {
+  font-weight: 500;
+  color: black;
+}
+
+input:focus {
+  outline: transparent;
+}
+
+.location-i::before {
+  padding-right: 15px;
+}
+
+/*Presentation*/
+.presentation {
+  background-color: #f6f6f6;
+  padding: 33px 0 50px;
+}
+
+.presentation h1 {
+  text-align: center;
+  padding: 0 50px 12px;
+}
+
+.presentation p {
+  text-align: center;
+  padding: 0 22px 24px;
+  font-weight: 300;
+}
+
+.presentation-btn {
+  text-align: center;
+}
+
+.presentation-btn button {
+  padding: 14px 16px;
+  border-radius: 25px;
+  border: transparent;
+  font-weight: 400;
+  color: white;
+  background-image: radial-gradient(ellipse at 0 0, #FF79DA 35%, #9356DC 100%);
+  -webkit-box-shadow: 2px 5px 8px 2px  lightgrey;
+          box-shadow: 2px 5px 8px 2px  lightgrey;
+}
+
+.presentation-btn button:hover {
+  opacity: 0.80;
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

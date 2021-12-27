@@ -1,0 +1,251 @@
+@import "../sass/variable.scss";
+
+/*General*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+body{
+    min-width: 350px;
+}
+
+
+
+/*Header*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0 15px 0;
+    position: relative;
+
+    a{
+        padding-left: 0px;
+
+        .fa-arrow-left::before{
+            font-size: 1.2em;  
+            position: absolute;
+            left: 30px;
+            top: 28.5px;
+        }
+    }
+
+    img{
+        height: 25px;
+    }
+
+}
+
+/* Main image*/
+
+
+
+.main-image{
+    object-fit: cover;
+    width: 100%;
+    max-height: 30rem;
+}
+
+/* Main Menu*/
+
+.menu{
+    background-color: $bg-grey;
+    padding: 10px 14px 58px;
+    border-radius: 30px 30px 0 0;
+    width:100%;
+    margin-top: -40px;
+    position: relative;
+}
+
+.menu-header{
+    display: flex;
+    justify-content: space-between;
+
+    h1{
+        font-family: Shrikhand;
+        font-weight: 500;
+    }
+
+    .fa-heart{
+        font-size: 1.5em;
+        margin-right:17px;
+    }
+
+    .fa-heart:hover{
+        font-weight: 700;
+        -webkit-background-clip: text; /*pour que le hover soit seulement sur le coeur*/
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient($sec-color , $prim-color);
+        transition:  100ms ease-in-out;
+        cursor: pointer;
+    }
+
+
+}
+
+.menu-part{
+    margin: 35px 0 0 0;
+    
+}
+
+.s-d-d-header{
+    display: flex;
+    flex-direction: column;
+
+    &::after{
+        content:"";
+        padding: 1.5px 0;
+        background: #99e2d0;
+        display: inline-block;
+        width: 40px;
+        margin-top: 5px;
+    }
+}
+
+.s-d-d-card{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 15px 15px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 5px 8px 2px  rgb(218, 226, 225);
+}
+
+.menu-info{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.menu-price{
+    margin-top: 22px;
+}
+
+/*  Check animation !!!en attente de solution!!!
+
+.menu-check{
+    display: flex;
+    justify-content: center;
+    background-color: #99e2d0;
+    width: 65px;
+    padding: 15px 0;
+    transition-duration: .5s;
+    border-radius: 0 20px 20px 0;
+    
+}
+
+.menu-check-div{
+    height: 27px;
+    width: 27px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.fa-check{
+    color: #99e2d0;
+}
+
+*/
+
+.menu-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+    button{
+        padding: 14px 16px;
+        border-radius: 25px;
+        border: transparent;
+        font-weight: 700;
+        font-size: 1em;
+        color: white;
+        background-image: radial-gradient(ellipse at 0 0, $sec-color 35%, $prim-color 100%);
+        box-shadow: 2px 5px 8px 2px  rgb(218, 226, 225);;
+        
+    }
+
+    button:hover{
+        opacity: 0.80;
+        transition: 200ms ease-out;
+        cursor: pointer;
+        
+    }
+
+}
+
+
+/*Footer*/
+
+footer{
+    background: #353535 ;
+    padding: 20px 0 25px 20px;
+        
+    .fa-utensils{
+        padding-right: 10px;
+        color: white;
+    }
+
+    .fa-hands-helping{
+        padding-right: 2px;
+        color: white;
+    }
+
+}
+    
+.foot-header{
+    padding-bottom: 15px;
+    color: white;
+    font-family: Shrikhand;
+    font-size: 1.15em;
+}
+
+.foot-list{
+    padding-bottom: 10px;
+
+    a{
+        color: white;
+    }
+
+    &:hover{
+        text-decoration: underline;
+    }
+    
+}    
+
+/*Responsive - min-768px*/
+
+@media screen and (min-width:1280px) {
+
+    .menu-parts{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .menu-part{
+            width: 33%;
+        }
+
+    }
+
+}

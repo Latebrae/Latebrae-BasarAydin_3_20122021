@@ -1,0 +1,212 @@
+/*General*/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+body {
+  min-width: 350px;
+}
+
+/*Header*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 0 15px 0;
+  position: relative;
+}
+header a {
+  padding-left: 0px;
+}
+header a .fa-arrow-left::before {
+  font-size: 1.2em;
+  position: absolute;
+  left: 30px;
+  top: 28.5px;
+}
+header img {
+  height: 25px;
+}
+
+/* Main image*/
+.main-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 30rem;
+}
+
+/* Main Menu*/
+.menu {
+  background-color: #f6f6f6;
+  padding: 10px 14px 58px;
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  margin-top: -40px;
+  position: relative;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+}
+.menu-header h1 {
+  font-family: Shrikhand;
+  font-weight: 500;
+}
+.menu-header .fa-heart {
+  font-size: 1.5em;
+  margin-right: 17px;
+}
+.menu-header .fa-heart:hover {
+  font-weight: 700;
+  -webkit-background-clip: text;
+  /*pour que le hover soit seulement sur le coeur*/
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  transition: 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.menu-part {
+  margin: 35px 0 0 0;
+}
+
+.s-d-d-header {
+  display: flex;
+  flex-direction: column;
+}
+.s-d-d-header::after {
+  content: "";
+  padding: 1.5px 0;
+  background: #99e2d0;
+  display: inline-block;
+  width: 40px;
+  margin-top: 5px;
+}
+
+.s-d-d-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 15px 15px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 2px 5px 8px 2px #dae2e1;
+}
+
+.menu-info {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.menu-price {
+  margin-top: 22px;
+}
+
+/*  Check animation !!!en attente de solution!!!
+
+.menu-check{
+    display: flex;
+    justify-content: center;
+    background-color: #99e2d0;
+    width: 65px;
+    padding: 15px 0;
+    transition-duration: .5s;
+    border-radius: 0 20px 20px 0;
+
+}
+
+.menu-check-div{
+    height: 27px;
+    width: 27px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.fa-check{
+    color: #99e2d0;
+}
+
+*/
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.menu-btn button {
+  padding: 14px 16px;
+  border-radius: 25px;
+  border: transparent;
+  font-weight: 700;
+  font-size: 1em;
+  color: white;
+  background-image: radial-gradient(ellipse at 0 0, #FF79DA 35%, #9356DC 100%);
+  box-shadow: 2px 5px 8px 2px #dae2e1;
+}
+.menu-btn button:hover {
+  opacity: 0.8;
+  transition: 200ms ease-out;
+  cursor: pointer;
+}
+
+/*Footer*/
+footer {
+  background: #353535;
+  padding: 20px 0 25px 20px;
+}
+footer .fa-utensils {
+  padding-right: 10px;
+  color: white;
+}
+footer .fa-hands-helping {
+  padding-right: 2px;
+  color: white;
+}
+
+.foot-header {
+  padding-bottom: 15px;
+  color: white;
+  font-family: Shrikhand;
+  font-size: 1.15em;
+}
+
+.foot-list {
+  padding-bottom: 10px;
+}
+.foot-list a {
+  color: white;
+}
+.foot-list:hover {
+  text-decoration: underline;
+}
+
+/*Responsive - min-768px*/
+@media screen and (min-width: 1280px) {
+  .menu-parts {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .menu-parts .menu-part {
+    width: 33%;
+  }
+}
+
+/*# sourceMappingURL=menu_1.css.map */

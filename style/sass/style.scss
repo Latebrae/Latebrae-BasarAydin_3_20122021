@@ -39,7 +39,12 @@ body{
     background: white;
     opacity: 0.96;
     z-index: 1000;
-    display: none;
+    animation: fadeinout 4s linear forwards;
+}
+  
+@keyframes fadeinout {
+0% { opacity: 1; }
+100% { opacity: 0; z-index: -1; }
 }
 
 .loader{
@@ -55,6 +60,7 @@ body{
     border-bottom-color: $prim-color;
     opacity: 0.95;
     animation: spin 1s linear infinite;
+    
 }
 
 .loader-double::after{
@@ -207,13 +213,18 @@ input{
         height: 70px;
         box-shadow: 2px 5px 8px 2px  rgb(218, 226, 225);
         position: relative;
-    }
 
-     .prest-card:hover{
-        background: #f5edff;
-    }
+        &:hover{
+            background: #f5edff;
+        }
 
-     .prest-card:before{
+        &:hover .fas{
+            
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: $prim-color;
+        }
+
+        &:before{
             content:"" counter(x);
             counter-increment: x;
             display: flex;
@@ -230,6 +241,9 @@ input{
             left: -12px;
     }
 
+    }
+
+     
     .fa-mobile-alt{
         padding-right: 0px;
     }

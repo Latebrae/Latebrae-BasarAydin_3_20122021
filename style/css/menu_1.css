@@ -121,19 +121,19 @@ header img {
 }
 
 .timing1 {
-  animation-delay: 100ms;
+  animation-delay: 900ms;
 }
 
 .timing2 {
-  animation-delay: 200ms;
+  animation-delay: 800ms;
 }
 
 .timing3 {
-  animation-delay: 300ms;
+  animation-delay: 700ms;
 }
 
 .timing4 {
-  animation-delay: 400ms;
+  animation-delay: 600ms;
 }
 
 .timing5 {
@@ -141,19 +141,19 @@ header img {
 }
 
 .timing6 {
-  animation-delay: 600ms;
+  animation-delay: 400ms;
 }
 
 .timing7 {
-  animation-delay: 700ms;
+  animation-delay: 300ms;
 }
 
 .timing8 {
-  animation-delay: 800ms;
+  animation-delay: 200ms;
 }
 
 .timing9 {
-  animation-delay: 900ms;
+  animation-delay: 100ms;
 }
 
 @keyframes card {
@@ -274,7 +274,7 @@ footer .fa-hands-helping {
   .menu-parts {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 7px;
   }
 
   .menu-parts .menu-part {

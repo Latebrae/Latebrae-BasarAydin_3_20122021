@@ -262,6 +262,7 @@ input:focus {
   width: 100%;
   box-shadow: 2px 5px 8px 2px #cbd3d2;
   border-radius: 20px;
+  background: white;
 }
 .resto-card img {
   height: 175px;

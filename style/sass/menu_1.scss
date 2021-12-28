@@ -272,42 +272,8 @@ animation-delay: 100ms;
 
 /*Footer*/
 
-footer{
-    background: #353535 ;
-    padding: 20px 0 25px 20px;
-        
-    .fa-utensils{
-        padding-right: 10px;
-        color: white;
-    }
-
-    .fa-hands-helping{
-        padding-right: 2px;
-        color: white;
-    }
-
-}
-    
-.foot-header{
-    padding-bottom: 15px;
-    color: white;
-    font-family: Shrikhand;
-    font-size: 1.15em;
-}
-
-.foot-list{
-    padding-bottom: 10px;
-
-    a{
-        color: white;
-    }
-
-    &:hover{
-        text-decoration: underline;
-    }
-    
-}    
+@import "../sass/footer.scss";
 
 /*Responsive - min-768px*/
 
-@import "../sass/menu_1-responsive.scss"
+@import "../sass/menu_1-responsive.scss";

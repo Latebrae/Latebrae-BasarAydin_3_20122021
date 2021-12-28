@@ -1,0 +1,75 @@
+@import "../sass/variable.scss";
+
+.loader-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: white;
+    opacity: 0.96;
+    z-index: 1000;
+    animation: fadeinout 4s linear forwards;
+}
+  
+@keyframes fadeinout {
+0% { opacity: 1; }
+100% { opacity: 0; z-index: -1; }
+}
+
+.loader{
+    height: 75px;
+    width: 75px;
+    position: relative; 
+}
+
+.loader-double{
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: $prim-color;
+    border-bottom-color: $prim-color;
+    opacity: 0.95;
+    animation: spin 1s linear infinite;
+    
+}
+
+.loader-double::after{
+    content: "";
+    position: absolute;
+    border: 6px solid transparent ;
+    border-radius: 50px;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    border-bottom-color: $sec-color;
+    border-top-color: $sec-color;
+    opacity: 0.6;
+    animation: spin-reverse 2s linear infinite;
+}
+
+.loader-double::before{
+    content: "";
+    position: absolute;
+    border: 6px solid transparent ;
+    border-radius: 50px;
+    top: 15px;
+    left: 15px;
+    bottom: 15px;
+    right: 15px;
+    border-bottom-color: $ter-color;
+    border-top-color: $ter-color;
+    opacity: 0.5;
+    animation: spin-reverse 5s linear infinite;
+}
+
+@keyframes spin{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes spin-reverse{
+    0% {transform: rotate(0deg);visibility: 1;}
+    100% {transform: rotate(-360deg);visibility: 0;}
+}

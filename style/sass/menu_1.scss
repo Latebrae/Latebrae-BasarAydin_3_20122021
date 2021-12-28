@@ -124,7 +124,8 @@ header{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 2px 5px 8px 2px  rgb(218, 226, 225);
-    transition-duration: 500ms;
+    animation: card 500ms cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
 
     &:hover .menu-check{
         width: 70px;
@@ -143,6 +144,43 @@ header{
      }
     
 
+}
+
+.timing1{
+animation-delay: 100ms;
+}
+.timing2{
+animation-delay: 200ms;
+}
+.timing3{
+animation-delay: 300ms;
+}
+.timing4{
+animation-delay: 400ms;
+}
+.timing5{
+animation-delay: 500ms;
+}
+.timing6{
+animation-delay: 600ms;
+}
+.timing7{
+animation-delay: 700ms;
+}
+.timing8{
+animation-delay: 800ms;
+}
+.timing9{
+animation-delay: 900ms;
+}
+
+@keyframes card{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 .menu-info{
@@ -177,14 +215,12 @@ header{
 
 
 .menu-check{
-    justify-content: flex-end;
     display: flex;
     justify-content: center;
-    justify-: flex-end;
+    align-items: center;
     margin-left: auto;
     background-color: #99e2d0;
     width: 0px;
-    padding: 22px 0;
     transition-duration: .5s;
     border-radius:  20px;
     transform: rotate(180deg);

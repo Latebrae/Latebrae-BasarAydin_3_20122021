@@ -1,0 +1,32 @@
+/*Footer*/
+footer {
+  background: #353535;
+  padding: 20px 0 25px 20px;
+}
+footer .fa-utensils {
+  padding-right: 10px;
+  color: white;
+}
+footer .fa-hands-helping {
+  padding-right: 2px;
+  color: white;
+}
+
+.foot-header {
+  padding-bottom: 15px;
+  color: white;
+  font-family: Shrikhand;
+  font-size: 1.15em;
+}
+
+.foot-list {
+  padding-bottom: 10px;
+}
+.foot-list a {
+  color: white;
+}
+.foot-list:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=footer.css.map */

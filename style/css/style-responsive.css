@@ -1,0 +1,41 @@
+@media screen and (min-width: 1024px) {
+  .prestation h1 {
+    text-align: center;
+  }
+  .prestation .prest-cards {
+    flex-direction: row;
+    width: 100%;
+  }
+  .prestation .prest-card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-right: 50px;
+    width: 33%;
+  }
+  .prestation .prest-card-h4 {
+    margin-left: 0;
+  }
+  .prestation i:before {
+    padding: 0 10px;
+  }
+
+  .restaurants h1 {
+    text-align: center;
+  }
+
+  .resto-cards {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .resto-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+}
+/*Responsive - min-1280px*/
+
+/*# sourceMappingURL=style-responsive.css.map */

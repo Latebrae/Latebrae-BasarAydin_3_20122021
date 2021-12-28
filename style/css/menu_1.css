@@ -69,6 +69,7 @@ header img {
   margin-right: 17px;
 }
 .menu-header .fa-heart:hover {
+  transition-duration: 500ms;
   font-weight: 700;
   -webkit-background-clip: text;
   /*pour que le hover soit seulement sur le coeur*/
@@ -97,13 +98,25 @@ header img {
 
 .s-d-d-card {
   display: flex;
-  justify-content: space-between;
   margin-top: 20px;
-  padding: 15px 15px;
   background: white;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 2px 5px 8px 2px #dae2e1;
+  transition-duration: 500ms;
+}
+.s-d-d-card:hover .menu-check {
+  width: 70px;
+}
+.s-d-d-card:hover .menu-check-div {
+  transform: rotate(180deg);
+  transition-duration: 500ms;
+}
+.s-d-d-card .fa-check:before {
+  display: none;
+}
+.s-d-d-card:hover .fa-check:before {
+  display: initial;
 }
 
 .menu-info {
@@ -111,39 +124,54 @@ header img {
   text-overflow: ellipsis;
   overflow: hidden;
 }
+.menu-info h3 {
+  margin: 15px 0 0 15px;
+}
+.menu-info p {
+  margin: 0 0 15px 15px;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .menu-price {
-  margin-top: 22px;
+  margin: 37.5px 18px 0 0px;
+  margin-left: auto;
+  text-align: right;
+  flex-grow: 1;
 }
 
-/*  Check animation !!!en attente de solution!!!
-
-.menu-check{
-    display: flex;
-    justify-content: center;
-    background-color: #99e2d0;
-    width: 65px;
-    padding: 15px 0;
-    transition-duration: .5s;
-    border-radius: 0 20px 20px 0;
-
+.menu-check {
+  justify-content: flex-end;
+  display: flex;
+  justify-content: center;
+  justify-: flex-end;
+  margin-left: auto;
+  background-color: #99e2d0;
+  width: 0px;
+  padding: 22px 0;
+  transition-duration: 0.5s;
+  border-radius: 20px;
+  transform: rotate(180deg);
 }
 
-.menu-check-div{
-    height: 27px;
-    width: 27px;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
+.menu-check-div {
+  height: 27px;
+  width: 27px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 
-.fa-check{
-    color: #99e2d0;
+.fa-check {
+  color: #99e2d0;
 }
 
-*/
 .menu-btn {
   display: flex;
   justify-content: center;
@@ -198,12 +226,14 @@ footer .fa-hands-helping {
 }
 
 /*Responsive - min-768px*/
+/*Responsive - min-768px*/
 @media screen and (min-width: 1280px) {
   .menu-parts {
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
+
   .menu-parts .menu-part {
     width: 33%;
   }

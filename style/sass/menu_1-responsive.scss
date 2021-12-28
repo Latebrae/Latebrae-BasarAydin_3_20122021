@@ -1,0 +1,11 @@
+/*Responsive - min-768px*/
+@media screen and (min-width: 1280px) {
+    .menu-parts {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+    .menu-parts .menu-part {
+      width: 33%;
+    }
+  }

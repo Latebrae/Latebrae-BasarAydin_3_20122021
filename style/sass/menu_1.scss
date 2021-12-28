@@ -86,6 +86,7 @@ header{
     }
 
     .fa-heart:hover{
+        transition-duration: 500ms;
         font-weight: 700;
         -webkit-background-clip: text; /*pour que le hover soit seulement sur le coeur*/
         -webkit-text-fill-color: transparent;
@@ -117,37 +118,76 @@ header{
 }
 
 .s-d-d-card{
-    
     display: flex;
-    justify-content: space-between;
     margin-top: 20px;
-    padding: 15px 15px;
     background: white;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 2px 5px 8px 2px  rgb(218, 226, 225);
+    transition-duration: 500ms;
+
+    &:hover .menu-check{
+        width: 70px;
+    }
+
+    &:hover .menu-check-div{
+        transform: rotate(180deg);
+        transition-duration: 500ms;
+    }
+    .fa-check:before{
+        display: none;
+     }
+ 
+     &:hover .fa-check:before{
+        display: initial;
+     }
+    
+
 }
 
 .menu-info{
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+
+    h3{
+        margin: 15px 0 0 15px;
+    }
+
+    p{
+        margin: 0 0 15px 15px;
+    }
+
+}
+
+.text-overflow{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .menu-price{
-    margin-top: 22px;
+    margin: 37.5px 18px 0 0px;
+    margin-left: auto;
+    text-align: right;
+    flex-grow: 1;
+    
 }
 
-/*  Check animation !!!en attente de solution!!!
+
 
 .menu-check{
+    justify-content: flex-end;
     display: flex;
     justify-content: center;
+    justify-: flex-end;
+    margin-left: auto;
     background-color: #99e2d0;
-    width: 65px;
-    padding: 15px 0;
+    width: 0px;
+    padding: 22px 0;
     transition-duration: .5s;
-    border-radius: 0 20px 20px 0;
+    border-radius:  20px;
+    transform: rotate(180deg);
     
 }
 
@@ -165,7 +205,7 @@ header{
     color: #99e2d0;
 }
 
-*/
+
 
 .menu-btn{
     display: flex;
@@ -235,17 +275,4 @@ footer{
 
 /*Responsive - min-768px*/
 
-@media screen and (min-width:1280px) {
-
-    .menu-parts{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-
-        .menu-part{
-            width: 33%;
-        }
-
-    }
-
-}
+@import "../sass/menu_1-responsive.scss"

@@ -317,10 +317,10 @@ input:focus {
 }
 .resto-infos .fa-heart::after {
   content: "\f004";
-  font-size: 0.9em;
+  font-size: 1.06em;
   position: absolute;
-  right: 0.055em;
-  top: 0.055em;
+  right: -0.03em;
+  top: -0.03em;
   font-weight: 600;
   -webkit-background-clip: text;
   /*pour que le bg image soit seulement sur le coeur*/

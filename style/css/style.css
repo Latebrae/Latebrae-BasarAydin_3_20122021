@@ -30,9 +30,8 @@ body {
   align-items: center;
   position: fixed;
   background: white;
-  opacity: 0.96;
   z-index: 1000;
-  animation: fadeinout 4s linear forwards;
+  animation: fadeinout 2.5s linear forwards;
 }
 
 @keyframes fadeinout {
@@ -175,6 +174,7 @@ input:focus {
 .presentation-btn button:hover {
   opacity: 0.8;
   transition: 200ms ease-out;
+  box-shadow: 2px 5px 8px 2px #b4bbba;
   cursor: pointer;
 }
 
@@ -311,14 +311,27 @@ input:focus {
   font-weight: 300;
 }
 .resto-infos .fa-heart {
-  font-size: 1.3em;
+  font-size: 1.563em;
+  margin-right: 17px;
+  position: relative;
 }
-.resto-infos .fa-heart:hover {
-  font-weight: 700;
+.resto-infos .fa-heart::after {
+  content: "\f004";
+  font-size: 0.9em;
+  position: absolute;
+  right: 0.055em;
+  top: 0.055em;
+  font-weight: 600;
   -webkit-background-clip: text;
+  /*pour que le bg image soit seulement sur le coeur*/
   -webkit-text-fill-color: transparent;
+  /*pour ne pas que le coeur devienne noir au hover*/
   background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: 150ms ease-in-out;
+  transform: scale(0);
+}
+.resto-infos .fa-heart.fa-heart:hover::after {
+  transform: scale(1);
+  transition: 500ms ease-in-out;
   cursor: pointer;
 }
 

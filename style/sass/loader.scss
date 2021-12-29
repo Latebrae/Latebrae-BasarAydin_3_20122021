@@ -8,9 +8,8 @@
     align-items: center;
     position: fixed;
     background: white;
-    opacity: 0.96;
     z-index: 1000;
-    animation: fadeinout 4s linear forwards;
+    animation: fadeinout 2.5s linear forwards;
 }
   
 @keyframes fadeinout {

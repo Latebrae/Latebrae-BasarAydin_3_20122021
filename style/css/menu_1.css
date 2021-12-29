@@ -65,20 +65,29 @@ header img {
   font-weight: 500;
 }
 .menu-header .fa-heart {
-  font-size: 1.5em;
+  font-size: 1.563em;
   margin-right: 17px;
+  position: relative;
 }
-.menu-header .fa-heart:hover {
-  transition-duration: 500ms;
-  font-weight: 700;
+.menu-header .fa-heart::after {
+  content: "\f004";
+  font-size: 0.9em;
+  position: absolute;
+  right: 0.055em;
+  top: 0.055em;
+  font-weight: 600;
   -webkit-background-clip: text;
   /*pour que le hover soit seulement sur le coeur*/
   -webkit-text-fill-color: transparent;
+  /*pour ne pas que le coeur devienne noir au hover*/
   background-image: linear-gradient(#FF79DA, #9356DC);
-  transition: 100ms ease-in-out;
+  transform: scale(0);
+}
+.menu-header .fa-heart.fa-heart:hover::after {
+  transform: scale(1);
+  transition: 500ms ease-in-out;
   cursor: pointer;
 }
-
 .menu-part {
   margin: 35px 0 0 0;
 }
@@ -222,10 +231,10 @@ header img {
   padding-top: 40px;
 }
 .menu-btn button {
-  padding: 14px 16px;
-  border-radius: 25px;
+  padding: 17px 50px;
+  border-radius: 50px;
   border: transparent;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1em;
   color: white;
   background-image: radial-gradient(ellipse at 0 0, #FF79DA 35%, #9356DC 100%);
@@ -234,6 +243,7 @@ header img {
 .menu-btn button:hover {
   opacity: 0.8;
   transition: 200ms ease-out;
+  box-shadow: 2px 5px 8px 2px #b4bbba;
   cursor: pointer;
 }
 

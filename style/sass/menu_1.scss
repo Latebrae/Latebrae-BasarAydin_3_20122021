@@ -22,8 +22,6 @@ body{
     min-width: 350px;
 }
 
-
-
 /*Header*/
 
 header{
@@ -51,8 +49,6 @@ header{
 }
 
 /* Main image*/
-
-
 
 .main-image{
     object-fit: cover;
@@ -149,6 +145,7 @@ header{
         transform: rotate(180deg);
         transition-duration: 500ms;
     }
+    
     .fa-check:before{
         display: none;
      }
@@ -157,7 +154,6 @@ header{
         display: initial;
      }
     
-
 }
 
 .timing1{

@@ -71,10 +71,10 @@ header img {
 }
 .menu-header .fa-heart::after {
   content: "\f004";
-  font-size: 1.06em;
+  font-size: 1em;
   position: absolute;
-  right: -0.03em;
-  top: -0.03em;
+  right: 0;
+  top: 0;
   font-weight: 600;
   -webkit-background-clip: text;
   /*pour que le bg image soit seulement sur le coeur*/
@@ -87,6 +87,10 @@ header img {
   transform: scale(1);
   transition: 500ms ease-in-out;
   cursor: pointer;
+}
+.menu-header .fa-heart.fa-heart:hover:before {
+  transition: color 0.5s;
+  color: transparent;
 }
 
 .menu-part {

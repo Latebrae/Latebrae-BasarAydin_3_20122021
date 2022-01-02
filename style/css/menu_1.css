@@ -118,8 +118,9 @@ header img {
   overflow: hidden;
   box-shadow: 2px 5px 8px 2px #dae2e1;
   animation: card 500ms cubic-bezier(0.5, 1.58, 0.34, 0.82);
-  animation-fill-mode: both;
+  animation-fill-mode: both
 }
+
 .s-d-d-card:hover .menu-check {
   width: 70px;
 }
